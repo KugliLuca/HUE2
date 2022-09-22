@@ -2,7 +2,11 @@ import java.util.ArrayList;
 
 public class EratosthenesPrimeSieve implements PrimeSieve{
 
-    int cons = 10000;
+    public EratosthenesPrimeSieve(int cons) {
+        this.cons = cons;
+    }
+
+    int cons;
     ArrayList<Boolean> arr = new ArrayList<>(cons);
 
     @java.lang.Override
