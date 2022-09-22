@@ -12,7 +12,7 @@ public class EratosthenesPrimeSieve implements PrimeSieve{
         }
 
         for (int i = 2; i < cons; i++){
-            if(arr.get(i) != true){
+            if(!arr.get(i)){
 
                 for(int j = i; (j * i) < cons; j++){
                     arr.set(j * i, true);
